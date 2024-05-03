@@ -1,4 +1,4 @@
-// use k256::ecdsa::{RecoveryId, Signature, VerifyingKey};
+use k256::ecdsa::{RecoveryId, Signature, VerifyingKey};
 use near_sdk::borsh::{BorshDeserialize, BorshSerialize};
 use near_sdk::{log, near_bindgen};
 
