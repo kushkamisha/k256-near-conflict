@@ -1,13 +1,11 @@
+// use k256::ecdsa::{RecoveryId, Signature, VerifyingKey};
 use near_sdk::borsh::{BorshDeserialize, BorshSerialize};
 use near_sdk::{log, near_bindgen};
 
 pub trait Packable {
-    // fn pack(&self) -> Vec<u8>;
-    // fn new(greeting: String) -> Self;
     fn get_greeting(&self) -> String;
     fn set_greeting(&mut self, greeting: String);
 }
-
 
 // Define the contract structure
 #[near_bindgen]
@@ -21,7 +19,7 @@ pub struct Contract {
 impl Default for Contract {
     fn default() -> Self {
         Self {
-            greeting: "Hello there".to_string(),
+            greeting: "Hello everyone!".to_string(),
         }
     }
 }

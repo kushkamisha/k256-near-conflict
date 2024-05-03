@@ -1,6 +1,8 @@
 #!/bin/bash
 set -eox pipefail
 
+rm -rf target
+
 echo ">> Building contract"
 
 rustup target add wasm32-unknown-unknown
