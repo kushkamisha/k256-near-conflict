@@ -1,1 +1,2 @@
+source dev.env
 near contract call-function as-transaction $DEPLOYER_ACCOUNT_ID set_greeting json-args '{"greeting": "Hello"}' prepaid-gas '100.0 Tgas' attached-deposit '0 NEAR' sign-as $DEPLOYER_ACCOUNT_ID network-config testnet sign-with-keychain send
